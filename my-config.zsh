@@ -67,3 +67,6 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # ===== zsh-syntax-highlighting 設定 =====
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+
+# opens Emacs in the terminal. And, in the same session 
+alias emacs='emacs -nw'
