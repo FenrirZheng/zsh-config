@@ -27,7 +27,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # ===== 基礎設定 =====
-export LANG=en_US.UTF-8
 export EDITOR=vim
 export HISTSIZE=50000
 export SAVEHIST=50000
@@ -70,3 +69,16 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 # opens Emacs in the terminal. And, in the same session 
 alias emacs='emacs -nw'
+
+
+if [[ $TMUX != "" ]] then
+    export TERM="tmux-256color"
+else
+    export TERM="xterm-256color"
+fi
+
+
+#------------------UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
